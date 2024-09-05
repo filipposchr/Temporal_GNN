@@ -13,10 +13,10 @@ def count_motif_events():
        motif_3 = 0
        motif_4 = 0
        
-       #file_original = "out_CollegeMsg-orig"
+       file_original = "out_CollegeMsg-orig"
        #file_original = "out_SMS-orig"
        #file_original = "out_superuser-orig"
-       file_original = "out_facebook-wall-orig"
+       #file_original = "out_facebook-wall-orig"
        
        with open(file_original, "r") as f:
               for line in itertools.islice(f, 3, None):
@@ -37,10 +37,10 @@ def count_motif_events():
        motif_3_g = 0
        motif_4_g = 0
        
-       #file_gen = "out_CollegeMsg-gen"
+       file_gen = "out_CollegeMsg-gen"
        #file_gen = "out_SMS-gen"
        #file_gen = "out_superuser-gen"
-       file_gen = "out_facebook-wall-gen"
+       #file_gen = "out_facebook-wall-gen"
        
        with open(file_gen, "r") as f:
               for line in itertools.islice(f, 3, None):
@@ -62,11 +62,11 @@ def global_graph_statistics():
 
        #ORIGINAL GRAPH
        
-       #file = "CollegeMsg.txt"
+       file = "CollegeMsg.txt"
        #file = "facebook-wall.txt"
        #file = "stackoverflow.txt"
        #file = "SMS-A.txt"
-       file = "superuser.txt"
+       #file = "superuser.txt"
        
        with open(file, "r") as f:
            G_orig = nx.read_edgelist(f.readlines(),
@@ -94,10 +94,10 @@ def global_graph_statistics():
        
        #GENERATED GRAPH
        
-       #file = "CollegeMsg_gen.txt"
+       file = "CollegeMsg_gen.txt"
        #file = "facebook-wall-gen.txt"
        #file = "SMS-A-gen.txt"
-       file = "superuser-gen.txt"
+       #file = "superuser-gen.txt"
        
        with open(file, "r") as f:
               for line in itertools.islice(f, 4, None):
@@ -136,10 +136,11 @@ def ks_statistics():
        
        #ORIGINAL GRAPH
        
-       file = "superuser.txt"
-       #file = "CollegeMsg.txt"
+       
+       file = "CollegeMsg.txt"
        ##file = "facebook-wall.txt"
        #file = "SMS-A.txt"
+       #file = "superuser.txt"
        
        with open(file, "r") as f:
            G_orig = nx.read_edgelist(f.readlines()[0:],
@@ -205,12 +206,12 @@ def global_graph_statistics2():
        #Statistics of the temporal network datasets - Generating Table 1
 
        #ORIGINAL GRAPH
-       
-       file = "superuser.txt"
-       #file = "CollegeMsg.txt"
+
+       file = "CollegeMsg.txt"
        #file = "facebook-wall.txt"
        #file = "stackoverflow.txt"
        #file = "SMS-A.txt"
+       #file = "superuser.txt"  
        
        with open(file, "r") as f:
            G_orig = nx.read_edgelist(f.readlines(),
