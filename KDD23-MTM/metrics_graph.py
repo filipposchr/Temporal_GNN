@@ -135,10 +135,9 @@ def ks_statistics():
        #Experiment 3: Kolmogorov-Smirnov (KS) test
        
        #ORIGINAL GRAPH
-       
-       
+
        file = "CollegeMsg.txt"
-       ##file = "facebook-wall.txt"
+       #file = "facebook-wall.txt"
        #file = "SMS-A.txt"
        #file = "superuser.txt"
        
@@ -151,8 +150,8 @@ def ks_statistics():
                                 
        #GENERATED GRAPH
        
-       #file = "CollegeMsg_gen.txt"
-       file = "superuser-gen.txt"
+       file = "CollegeMsg_gen.txt"
+       #file = "superuser-gen.txt"
        #file = "facebook-wall-gen.txt"
        #file = "SMS-A-gen.txt"
       
