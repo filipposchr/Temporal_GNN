@@ -6,6 +6,6 @@
 3) Run ```pip install -r requirements.txt```<br/>
    
 # Code Description
-> **metrics_graph.py** is used to compute the metrics for synthetic graphs wrt input temporal graph.
+> **metrics_graph.py** is used to compute the metrics for synthetic graphs wrt input temporal graph and reproduce the Experiments 1-5.
 
 
